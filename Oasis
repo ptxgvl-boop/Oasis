@@ -27295,7 +27295,7 @@ Players = game:GetService("Players")
                         Library:Notify({
                             Title = "KICK DETECTED",
                             Description = "Player: " .. realName .. " (" .. displayName .. ")",
-                            Icon = "rbxassetid://116176143011396",
+                            Icon = "rbxassetid://92219509537334",
                             Duration = 5,
                         })
                     end
@@ -27334,7 +27334,7 @@ Players = game:GetService("Players")
                     Library:Notify({
                         Title = "PACKET LAG DETECTED",
                         Description = "Source: " .. tostring(arg1) .. "\nSize: " .. tostring(SizeRounded) .. " MB",
-                        Icon = "rbxassetid://116176143011396",
+                        Icon = "rbxassetid://92219509537334",
                         Duration = 5,
                     })
                 end
@@ -27966,12 +27966,12 @@ WatermarkSettings = {
     Scale = 1,
 }
 
-watermark = Library:AddDraggableLabel("<b>" .. displayName .. "</b> | <b><b>Oasis</b></b> | 0 <b>FPS</b> | 0 <b>ms</b> | 00:00", "rbxassetid://116176143011396")
+watermark = Library:AddDraggableLabel("<b>" .. displayName .. "</b> | <b><b>Oasis</b></b> | 0 <b>FPS</b> | 0 <b>ms</b> | 00:00", "rbxassetid://92219509537334")
 
 function UpdateWatermark()
     local parts = {}
     table.insert(parts, "<b>" .. displayName .. "</b>")
-    table.insert(parts, "<b><b>PredatorX</b></b>")
+    table.insert(parts, "<b><b>Oasis</b></b>")
 
     if WatermarkSettings.ShowFPS then
         table.insert(parts, tostring(WatermarkSettings.LastFPS or 0) .. " <b>FPS</b>")
@@ -28166,10 +28166,10 @@ Library.ShowCustomCursor = false
 
 local displayName = LocalPlayer.DisplayName
 
-print("PredatorX Loaded")
+print("Oasis Notifyd")
 Library:Notify({
     Title = "<b>Oasis</b>",
     Description = "Load Successfully",
-    Icon = "rbxassetid://116176143011396",
+    Icon = "rbxassetid://92219509537334",
     Duration = 5
 })
